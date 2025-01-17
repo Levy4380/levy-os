@@ -36,3 +36,9 @@ Make sure to deploy the output of `remix build`
 
 - `build/server`
 - `build/client`
+
+## Deployments
+
+https://levy-os.vercel.app/
+
+

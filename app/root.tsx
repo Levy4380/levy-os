@@ -4,6 +4,7 @@ import {
   Meta,
   Scripts,
   ScrollRestoration,
+  Outlet,
 } from "@remix-run/react";
 import type { LinksFunction } from "@remix-run/node";
 import appStylesHref from "./app.css?url";
@@ -44,15 +45,18 @@ export default function App() {
           <nav>
             <ul>
               <li>
-                <a href={`/contacts/1`}>Your Name</a>
+                <a href={`/item/1`}>Route1</a>
               </li>
               <li>
-                <a href={`/contacts/2`}>Your Friend</a>
+                <a href={`/item/2`}>Route2</a>
               </li>
             </ul>
           </nav>
         </div>
-        <Template/>
+        <div id="detail">
+          <Outlet />
+        </div>
+        <Template />
         <ScrollRestoration />
         <Scripts />
       </body>
